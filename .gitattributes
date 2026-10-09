@@ -1,10 +1,10 @@
-# Week 4 (Morellia) - Exercise 1 (Loops)
+# Week 4 (Spotted Python) - Exercise 1 (Loops)
 
 # first follow the same steps as example to import file
 
 # Create an zero array that has the same length as the number of MS stars
 ms_num = np.where(star_type == 'Main Sequence') # find the indices for the MS stars
-ms_class = [] # creates an array of zeros
+ms_class = np.zeroes(lens(ms_num)) # creates an array of zeros
 
 # Classify the MS stars
 for k in range(len(super_num[0])): # index from 0 to number of MS stars
